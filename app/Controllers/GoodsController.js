@@ -14,7 +14,7 @@ function _drawGoods(){
           <small>${good.description}</small>
           <p><b>$${good.price.toFixed(2)}</b></p>
           <span>Stock: ${good.stock}</span>
-          <span><button class="btn btn-dark text-light" onclick="addToCart('${good.id}')">Add to Cart</button></span>
+          <span><button class="btn btn-dark text-light" onclick="app.cartController.addToCart('${good.id}')">Add to Cart</button></span>
         </div>
       </div>
     </div>

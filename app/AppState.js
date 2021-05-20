@@ -3,8 +3,6 @@ import { EventEmitter } from "./Utils/EventEmitter.js"
 import { isValidProp } from "./Utils/isValidProp.js"
 
 class AppState extends EventEmitter {
-  /** @type {Value[]} */
-  values = []
 
   /** @type {Goods[]}*/
   goods = [
@@ -17,6 +15,8 @@ class AppState extends EventEmitter {
     new Goods('Medicine Ball', 15, 10, 'Good balls for rollin', '//placehold.it/200x200.png', 6),
     new Goods("M'left Ball", 20000, 1, 'nice', '//placehold.it/200x200.png', 7)
   ]
+
+  cart = []
 }
 
 export const ProxyState = new Proxy(new AppState(), {
