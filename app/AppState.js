@@ -13,7 +13,7 @@ class AppState extends EventEmitter {
     new Goods('Soccer Ball', 4, 25, 'Good balls for footin', '//placehold.it/200x200.png', 4),
     new Goods('Base Ball', 10, 50, 'Good balls for dingin', '//placehold.it/200x200.png', 5),
     new Goods('Medicine Ball', 15, 10, 'Good balls for rollin', '//placehold.it/200x200.png', 6),
-    new Goods("M'left Ball", 20000, 1, 'nice', '//placehold.it/200x200.png', 7)
+    new Goods("Right Ball", 20000, 1, 'nice', '//placehold.it/200x200.png', 7)
   ]
 
   cart = []
